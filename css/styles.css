@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    background-color: rgb(37, 37, 37);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #5a5a5a;
+    width: 100%;
+    border-radius: 20px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items:center;
+}
+
+li{
+    list-style-type: none;
+    justify-content: center;
+    color: lightgray;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+nav:hover{
+    color: white;
+    animation: white 1s infinite alternate;
+}
+
+img{
+    width: 7.5vh;
+}
