@@ -1,19 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portefølje</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <nav>
-        <ul>
-            <li><img id="logo" src="./img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png" alt=""></li>
-            <li>om meg</li>
-            <li>showcase</li>
-            <li>kontakt</li>
-        </ul>
+      <img
+        id="logo"
+        src="./img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
+        alt=""
+      />
+      <ul>
+        <li>
+          <button onclick="document.getElementById('omMeg').scrollIntoView({ behavior: 'smooth' });">
+            <p>om meg</p>
+          </button>
+        </li>
+        <li>
+          <button onclick="document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' });">
+            <p>showcase</p>
+          </button>
+        </li>
+        <li>
+          <button onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });">
+            <p>kontakt</p>
+          </button>
+        </li>
+      </ul>
     </nav>
-</body>
+    <div class="main">
+      <div id="omMeg">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde labore
+        ipsa sint ab repudiandae minus, totam velit culpa. Quas repellendus
+        itaque dolore nulla magnam earum minus, non quo deserunt voluptatem!
+      </div>
+    </div>
+  </body>
 </html>
