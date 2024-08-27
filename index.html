@@ -15,27 +15,45 @@
       />
       <ul>
         <li>
-          <button onclick="document.getElementById('omMeg').scrollIntoView({ behavior: 'smooth' });">
+          <button
+            onclick="document.querySelector('.omMeg').scrollIntoView({ behavior: 'smooth' });"
+          >
             <p>om meg</p>
           </button>
         </li>
         <li>
-          <button onclick="document.getElementById('showcase').scrollIntoView({ behavior: 'smooth' });">
+          <button
+            onclick="document.querySelector('.showcase').scrollIntoView({ behavior: 'smooth' });"
+          >
             <p>showcase</p>
           </button>
         </li>
         <li>
-          <button onclick="document.getElementById('kontakt').scrollIntoView({ behavior: 'smooth' });">
+          <button
+            onclick="document.querySelector('.kontakt').scrollIntoView({ behavior: 'smooth' });"
+          >
             <p>kontakt</p>
           </button>
         </li>
       </ul>
     </nav>
     <div class="main">
-      <div id="omMeg">
+      <div id="mainContainer" class="omMeg">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde labore
         ipsa sint ab repudiandae minus, totam velit culpa. Quas repellendus
         itaque dolore nulla magnam earum minus, non quo deserunt voluptatem!
+      </div>
+      <div id="mainContainer" class="showcase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+        aspernatur soluta reprehenderit! Veniam aliquam, assumenda facere minus
+        ad voluptatum id officiis nemo, animi, doloremque maxime cumque quae
+        quibusdam tenetur quidem!
+      </div>
+      <div id="mainContainer" class="kontakt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore deleniti
+        minus veritatis et tempora? Est mollitia quasi magnam excepturi? Rerum
+        fugiat reprehenderit fugit ullam cum quas enim praesentium tempore
+        labore.
       </div>
     </div>
   </body>

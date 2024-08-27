@@ -47,6 +47,10 @@ li:hover, img:hover {
     margin-top: 30vw;
 }
 
+#mainContainer{
+    display: flex;
+}
+
 p{
     text-decoration: none;
 }
