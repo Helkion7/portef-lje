@@ -3,38 +3,42 @@
     src: url('../fonts/Poppins/Poppins-Black.ttf') format('truetype');
 }
 
-
-body{
+body {
     background-color: rgb(37, 37, 37);
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
 }
 
-nav{
+nav {
     display: flex;
     flex-direction: row;
     height: 5vw;
     width: 100%;
     border-radius: 20px;
+    background-color: #333;
+    align-items: center;
 }
 
-ul{
+ul {
     margin-left: 30vw;
     margin-right: 5vw;
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    padding: 0;
 }
 
-li{
+li {
     list-style-type: none;
     padding: 20px;
     justify-content: center;
     color: lightgray;
-    padding: 10px 20px;
     transition: transform 0.3s ease, font-size 0.3s ease;
     position: relative;
     border-radius: 180px;
-    font-family: poppins;
+    cursor: pointer;
 }
 
 li:hover, img:hover {
@@ -42,26 +46,28 @@ li:hover, img:hover {
     font-size: 18px;
 }
 
-.main{
-    display: flex;
+.main {
     margin-top: 30vw;
 }
 
-#mainContainer{
-    display: flex;
+#mainContainer {
+    margin-bottom: 2vw;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    color: white;
 }
 
-p{
-    text-decoration: none;
+p {
+    margin: 0;
 }
 
-img{
+img {
     transition: transform 0.3s ease, font-size 0.3s ease;
-
     width: 5vw;
     margin-left: 5px;
 }
 
-#box{
-    height: 2000px;
+#box {
+    height: 20000px;
 }
