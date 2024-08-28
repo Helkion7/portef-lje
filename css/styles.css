@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(37, 37, 37);
+    background-color: #252525;
     margin: 0;
     padding: 0;
     font-family: poppins;
@@ -15,8 +15,8 @@ nav {
     flex-direction: row;
     height: 5vw;
     width: 100%;
-    border-radius: 20px;
     align-items: center;
+    background-color: #252525;
 }
 
 ul {
@@ -45,12 +45,21 @@ li:hover, img:hover {
     font-size: 18px;
 }
 
-.main {
-    margin-top: 30vw;
+
+
+button {
+    background-color: transparent; /* Removes the white background */
+    border: none; /* Removes any borders */
+    color: inherit; /* Keeps the text color the same as the parent element */
+    font: inherit; /* Keeps the font style the same as the parent element */
+    cursor: pointer; /* Ensures the button still looks clickable */
 }
 
 #mainContainer {
-    margin-bottom: 2vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 100vh;
+    margin-bottom: 100vh;
     padding: 20px;
     background-color: #444;
     border-radius: 10px;
