@@ -40,7 +40,7 @@ li {
     cursor: pointer;
 }
 
-li:hover, img:hover {
+li:hover {
     transform: scale(1.2);
     font-size: 18px;
 }
@@ -58,7 +58,6 @@ button {
 #mainContainer {
     display: flex;
     justify-content: center;
-    margin-top: 100vh;
     height: 100vh;
     margin-bottom: 100vh;
     padding: 20px;
@@ -112,7 +111,6 @@ img {
 #mainPiece{
     display: flex;
     justify-content: center;
+    margin-left: 20vh;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
