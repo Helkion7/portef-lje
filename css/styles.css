@@ -48,17 +48,18 @@ li:hover, img:hover {
 
 
 button {
-    background-color: transparent; /* Removes the white background */
-    border: none; /* Removes any borders */
-    color: inherit; /* Keeps the text color the same as the parent element */
-    font: inherit; /* Keeps the font style the same as the parent element */
-    cursor: pointer; /* Ensures the button still looks clickable */
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
 }
 
 #mainContainer {
     display: flex;
     justify-content: center;
     margin-top: 100vh;
+    height: 100vh;
     margin-bottom: 100vh;
     padding: 20px;
     background-color: #444;
@@ -106,4 +107,12 @@ img {
 
 #scrollTopBtn:active {
     transform: scale(0.95);
+}
+
+#mainPiece{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
