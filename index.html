@@ -3,73 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portefølje</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <nav>
-      <img
-        id="logo"
-        src="./img/home_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.png"
-        alt=""
-      />
-      <ul>
-        <li>
-          <button
-            onclick="document.querySelector('.omMeg').scrollIntoView({ behavior: 'smooth' });"
-          >
-            <p>om meg</p>
-          </button>
-        </li>
-        <li>
-          <button
-            onclick="document.querySelector('.showcase').scrollIntoView({ behavior: 'smooth' });"
-          >
-            <p>showcase</p>
-          </button>
-        </li>
-        <li>
-          <button
-            onclick="document.querySelector('.kontakt').scrollIntoView({ behavior: 'smooth' });"
-          >
-            <p>kontakt</p>
-          </button>
-        </li>
-      </ul>
-    </nav>
-    <!-- <div id="mainPiece">
-      <img
-        id="mainPieceImg"
-        src="./img/vecteezy_3d-abstract-art_10177033.png"
-        alt=""
-        style="width: 150vh"
-      />
-    </div> -->
-    <div class="main">
-      <div id="mainContainer" class="omMeg">
-        <div class="parent">
-          <div class="div1">
-            <img src="https://placehold.co/450X450" alt="" />
-          </div>
-          <div class="div2"></div>
-          <div class="div3"></div>
-          <div class="div4"></div>
-          <div class="div5"></div>
-          <div class="div6"></div>
-          <div class="div7"></div>
-          <div class="div8"></div>
-          <div class="div9"></div>
-          <div class="div10"></div>
-          <div class="div11"></div>
-          <div class="div12"></div>
-          <div class="div13"></div>
+    <header>
+      <div class="logo">
+        <h1>My Portfolio</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h2>Hei, Jeg er Brynjar</h2>
+      <h3>Web Developer | Designer</h3>
+      <button
+        class="btn glowBtn"
+        onclick="document.querySelector('.contentSection').scrollIntoView({ behavior: 'smooth' });"
+      >
+        <p>Mitt arbeid</p>
+      </button>
+    </section>
+
+    <section id="about" class="contentSection">
+      <h2>Om meg</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        euismod, nisi vel consectetur euismod, nisi vel consectetur.
+      </p>
+    </section>
+
+    <section id="projects" class="contentSection">
+      <h2>My Projects</h2>
+      <div class="gridContainer">
+        <div class="gridItem projectCard">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+        </div>
+        <div class="gridItem projectCard">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+        </div>
+        <div class="gridItem projectCard">
+          <h3>Project 3</h3>
+          <p>Description of Project 3.</p>
+        </div>
+        <div class="gridItem projectCard">
+          <h3>Project 4</h3>
+          <p>Description of Project 4.</p>
         </div>
       </div>
-      <div id="mainContainer" class="showcase"></div>
-      <div id="mainContainer" class="kontakt"></div>
-    </div>
-    <button id="scrollTopBtn" onclick="scrollToTop()">&#8679;</button>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
-    <script src="./js/app.js"></script>
+    </section>
+
+    <section id="contact" class="contentSection">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="btn glowBtn">Send</button>
+      </form>
+    </section>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
