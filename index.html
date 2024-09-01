@@ -22,7 +22,7 @@
 
     <section id="hero">
       <h2>Hei, Jeg er Brynjar</h2>
-      <h3>Web Developer | Designer</h3>
+      <h3>Web Developer | Designer | Asker</h3>
       <button
         class="btn glowBtn"
         onclick="document.querySelector('.contentSection').scrollIntoView({ behavior: 'smooth' });"
@@ -42,19 +42,35 @@
     <section id="projects" class="contentSection">
       <h2>My Projects</h2>
       <div class="gridContainer">
-        <div class="gridItem projectCard">
+        <div onclick="displayProject(event)" class="gridItem projectCard">
           <h3>Project 1</h3>
           <p>Description of Project 1.</p>
         </div>
-        <div class="gridItem projectCard">
+        <div onclick="displayProject()" class="gridItem projectCard">
           <h3>Project 2</h3>
           <p>Description of Project 2.</p>
         </div>
-        <div class="gridItem projectCard">
+        <div onclick="displayProject()" class="gridItem projectCard">
           <h3>Project 3</h3>
           <p>Description of Project 3.</p>
         </div>
-        <div class="gridItem projectCard">
+        <div onclick="displayProject()" class="gridItem projectCard">
+          <h3>Project 4</h3>
+          <p>Description of Project 4.</p>
+        </div>
+        <div onclick="displayProject()" class="gridItem projectCard">
+          <h3>Project 1</h3>
+          <p>Description of Project 1.</p>
+        </div>
+        <div onclick="displayProject()" class="gridItem projectCard">
+          <h3>Project 2</h3>
+          <p>Description of Project 2.</p>
+        </div>
+        <div onclick="displayProject()" class="gridItem projectCard">
+          <h3>Project 3</h3>
+          <p>Description of Project 3.</p>
+        </div>
+        <div onclick="displayProject()" class="gridItem projectCard">
           <h3>Project 4</h3>
           <p>Description of Project 4.</p>
         </div>
@@ -74,6 +90,6 @@
       </form>
     </section>
 
-    <script src="scripts.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

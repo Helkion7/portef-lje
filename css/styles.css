@@ -108,7 +108,8 @@ nav ul li a:hover {
 
 #projects .gridContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(2, auto); /* 2 rows */
   gap: 20px;
   margin-top: 20px;
 }
@@ -156,6 +157,15 @@ footer {
   background: #333;
   color: #fff;
   margin-top: 40px;
+}
+
+.projectCardExpanded {
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  margin: 20px;
+  border-radius: 20px;
+  padding: 20px;
 }
 
 /* Keyframes for Animations */
