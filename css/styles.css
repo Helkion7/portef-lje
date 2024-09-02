@@ -155,76 +155,88 @@ hr {
 
 
 .projectCard {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    min-height: 150px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  min-height: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .projectCard:hover {
-    transform: scale(1.05);
-    box-shadow: 3px 3px 25px 3px #00aaff80;
+  transform: scale(1.05);
+  box-shadow: 3px 3px 25px 3px #00aaff80;
 }
 
 .extraContent {
-    max-height: 0;
-    opacity: 0;
-    visibility: hidden;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    margin-top: 10px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  margin-top: 10px;
+  transition: max-height 1s ease, opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* On hover, expand the .extraContent */
 .projectCard:hover .extraContent {
-    max-height: 1000px; /* Large enough to fit the content */
-    opacity: 1;
-    visibility: visible;
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+  position: relative;
 }
 
-
-
-#contactForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contactForm input,
-#contactForm textarea {
-  width: 100%;
-  max-width: 500px;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-}
-
-#contactForm input:focus,
-#contactForm textarea:focus {
-  border-color: #00aaff;
-}
-
-footer {
+/* From Uiverse.io by NorthFishHasNa */ 
+button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #00aaff80;
+  border: none;
+  color: #000000;
   text-align: center;
-  padding: 20px;
-  background: #333;
-  color: #fff;
-  margin-top: 40px;
+  font-size: 17px;
+  padding: 16px;
+  width: 130px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+ }
+ 
+ button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+ }
+ 
+ button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -15px;
+  transition: 0.5s;
+ }
+ 
+ button:hover span {
+  padding-right: 15px;
+ }
+ 
+ button:hover span:after {
+  opacity: 1;
+  right: 0;
+ }
+
+#contact{
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #333;
+  color: white;
 }
 
-.projectCardExpanded {
-  position: absolute;
-  height: 95%;
-  width: 95%;
-  margin: 20px;
-  border-radius: 20px;
-  padding: 20px;
+li{
+  list-style-type: none;
 }
 
 @keyframes fadeIn {
