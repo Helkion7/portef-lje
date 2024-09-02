@@ -1,4 +1,4 @@
-function displayProject(event) {
-  // Add the 'projectCardExpanded' class to the clicked element
-  event.target.classList.add("projectCardExpanded");
-}
+// function displayProject(event) {
+//   event.target.classList.remove("projectCard");
+//   event.target.classList.add("projectCardExpanded");
+// }
