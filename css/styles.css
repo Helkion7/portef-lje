@@ -172,6 +172,10 @@ hr {
   box-shadow: 3px 3px 25px 3px #00aaff80;
 }
 
+.projectCard img {
+  width: 50%;
+}
+
 .extraContent {
   max-height: 0;
   opacity: 0;
@@ -258,6 +262,10 @@ li {
   align-items: center;
   width: 3em;
   margin: 10px;
+}
+
+.link {
+  color: #fff;
 }
 
 @keyframes fadeIn {
