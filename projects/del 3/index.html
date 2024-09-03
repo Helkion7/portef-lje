@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Movies and TV Series</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div id="navbar">
+        <img id="logo" onclick="displayMovies()" src="./img/cinescope-high-resolution-logo-transparent.png" alt="cineScope logo">
+        <div class="input-group">
+          <input type="text" class="input" id="searchInput" placeholder="Search for a movie...">
+          <button class="button--submit" onclick="searchMovies()">Search</button>
+        </div>
+        <select id="sortOrderSelect" onchange="sortMovies()">
+          <option value="default">No Sorting</option>
+          <option value="highToLow">High to Low Score</option>
+          <option value="lowToHigh">Low to High Score</option>
+        </select>
+      </div>
+    </nav>
+    <div id="searchContainer">
+      <div id="movies"></div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
