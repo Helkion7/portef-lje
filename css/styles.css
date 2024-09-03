@@ -183,7 +183,6 @@ hr {
   max-height: 1000px;
   opacity: 1;
   visibility: visible;
-  position: relative;
 }
 
 /* From Uiverse.io by NorthFishHasNa */ 
@@ -233,6 +232,13 @@ button {
   border-top-right-radius: 10px;
   background-color: #333;
   color: white;
+}
+
+#contactMe{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
 }
 
 li{
