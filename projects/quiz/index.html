@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Mongolian Geography quiz</h1>
+
+    <div class="quizWrapper">
+      <div class="radio" id="question"></div>
+      <div class="radio" id="quiz"></div>
+      <button class="nextBtn" id="next" onclick="handleQuestion()">next</button>
+      <div class="submitBtn">
+        <button class="submitBtn" id="submit" onclick="submit()">submit</button>
+      </div>
+    </div>
+    <div class="scoreWrapper">
+      <div class="scoreBoard">
+        <div class="card"></div>
+        <div id="konteirerer">
+          <div class="scoreCard" id="scoreCard"></div>
+          <button id="startQuiz" onclick="startQuiz()">Start quiz</button>
+        </div>
+      </div>
+      <div class="highscore">
+        <div class="input-group">
+          <label for="username">Type your username to save score</label>
+          <input required="" type="text" name="text" id="username" autocomplete="off" class="input">
+          <!-- <label class="user-label">Type username to save score</label> -->
+        </div>
+        <button id="submitScore" onclick="submitScore()">Submit score</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+</html>
