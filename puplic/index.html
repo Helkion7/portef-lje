@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img
+            style="width: 5rem"
+            src="./img/weather-icon-isolated/10200707.png"
+            alt=""
+          />
+        </a>
+      </div>
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+          &#9776;
+          <!-- This is the hamburger icon -->
+        </div>
+        <ul id="nav-links" class="collapsed">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="./img/CV.pdf">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h2>Hei, Jeg er Brynjar</h2>
+      <h3>Web Developer | Designer | Asker</h3>
+      <button
+        class="btn glowBtn"
+        onclick="document.querySelector('.contentSection').scrollIntoView({ behavior: 'smooth' });"
+      >
+        <p>Mitt arbeid</p>
+      </button>
+    </section>
+
+    <section id="about" class="contentSection">
+      <div class="aboutMe">
+        <div class="div1">
+          <img
+            id="aboutMePhoto"
+            src="./img/IMG_0950.JPG"
+            alt="About Me Photo"
+          />
+        </div>
+        <div class="div2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nam
+            porro nostrum. At vitae voluptate facilis ipsam corrupti harum
+            labore, sit, maiores, sed quibusdam similique deleniti commodi
+            aperiam pariatur nobis.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="projects" class="contentSection">
+      <h2>Mine prosjekter</h2>
+      <div class="gridContainer">
+        <div class="projectCard">
+          <h3>Film nettside</h3>
+          <p>Nettside for å finne populære filmer</p>
+          <div class="extraContent">
+            <p>
+              Nettside hvor man kan se de mest populære filmene,<br />
+              du kan søke etter filmer, få en score på filmen og en beskrivelse
+              <br />
+              samt rangere etter score
+            </p>
+
+            <a href="./projects/del 3/index.html">
+              <button>
+                <span>code</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Vær nettside</h3>
+          <p>Nettside for å se værmeldingen</p>
+          <div class="extraContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              placeat nobis repudiandae ratione dolores quod debitis! Sint,
+              error veniam similique debitis atque repudiandae perspiciatis
+              magnam labore ad officia mollitia beatae!
+            </p>
+            <a href="./projects/del1/index.html">
+              <button>
+                <span>code</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>sign up</h3>
+          <p>Description of Project 3.</p>
+          <div class="extraContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              placeat nobis repudiandae ratione dolores quod debitis! Sint,
+              error veniam similique debitis atque repudiandae perspiciatis
+              magnam labore ad officia mollitia beatae!
+            </p>
+            <a href="./projects/passord/views/login.ejsS">
+              <button>
+                <span>code</span>
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Quiz</h3>
+          <p>Quiz nettside om Mongolia</p>
+          <div class="extraContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              placeat nobis repudiandae ratione dolores quod debitis! Sint,
+              error veniam similique debitis atque repudiandae perspiciatis
+              magnam labore ad officia mollitia beatae!
+            </p>
+            <button>
+              <span>code</span>
+            </button>
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Poster for verdensdagen for psykisk helse</h3>
+          <p>Poster for verdensdagen for psykisk helse</p>
+          <div class="extraContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              placeat nobis repudiandae ratione dolores quod debitis! Sint,
+              error veniam similique debitis atque repudiandae perspiciatis
+              magnam labore ad officia mollitia beatae!
+            </p>
+            <button>
+              <span>kampanje</span>
+            </button>
+          </div>
+        </div>
+        <div class="projectCard">
+          <h3>Illustrator logoer</h3>
+          <p>Description of Project 6.</p>
+          <div class="extraContent">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
+              placeat nobis repudiandae ratione dolores quod debitis! Sint,
+              error veniam similique debitis atque repudiandae perspiciatis
+              magnam labore ad officia mollitia beatae!
+            </p>
+            <button>
+              <span>code</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="contact" class="contentSection">
+      <footer>
+        <ul id="contactMe">
+          <li>
+            <h2>Email</h2>
+            <a class="link" href="mailto: brynjarbodegaard@gmail.com"
+              >brynjarbodegaard@gmail.com</a
+            >
+          </li>
+          <li>
+            <h2>Telefon</h2>
+            <a class="link" href="tel:+4748401453">+47 48401453</a>
+          </li>
+          <li>
+            <h2>Socials</h2>
+            <div id="socialLogo">
+              <a
+                href="https://github.com/Helkion7"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/github-mark-c791e9551fe4/github-mark/github-mark-white.svg"
+                  alt="GitHub Logo"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src="./img/iconmonstr-linkedin-3-240.png"
+                  alt="LinkedIn Logo"
+                />
+              </a>
+            </div>
+          </li>
+        </ul>
+      </footer>
+    </section>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>
