@@ -1,0 +1,123 @@
+@import "https://fonts.googleapis.com/css?family=VT323";
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  color: #e0e2f4;
+}
+
+body,
+p {
+  font: normal 20px/1.25rem "VT323", monospace;
+}
+
+input{
+  font: normal 20px/1.25rem "VT323", monospace;
+}
+
+button{
+  font: normal 20px/1.25rem "VT323", monospace;
+}
+
+h1 {
+  font: normal 2.75rem/1.05em "VT323", monospace;
+  font-size: 10vh;
+}
+
+h2 {
+  font: normal 2.25rem/1.25em "VT323", monospace;
+}
+
+h3 {
+  font: lighter 1.5rem/1.25em "VT323", monospace;
+}
+
+h4 {
+  font: lighter 1.125rem/1.2222222em "VT323", monospace;
+}
+
+body {
+  background: #0414a7;
+}
+
+label {
+  display: flex;
+}
+
+.button {
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+#welcome h1 {
+  font-size: 10vh;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  outline: 1px dotted rgb(37, 37, 37);
+  outline-offset: -4px;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff,
+    inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+  font: normal 20px/1.25rem "VT323", monospace;
+}
+
+input {
+  border: none;
+  background: hsl(0deg 0% 75%);
+  box-shadow: inset -1px -1px #292929, inset 1px 1px #fff,
+  inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding: 5px 30px;
+  font: normal 20px/1.25rem "VT323", monospace;
+  text-align: center;
+}
+
+#loginButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+button:active {
+  box-shadow: inset -1px -1px #fff, inset 1px 1px #292929,
+    inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+}
+
+.error {
+  color: black;
+  background-color: red;
+}

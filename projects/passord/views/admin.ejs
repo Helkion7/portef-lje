@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Admin Site</title>
+    <style>
+        body {
+            background-color: black;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .header {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .panel {
+            background-color: #111;
+            border: 2px solid #00FF00;
+            padding: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .panel h2 {
+            margin-top: 0;
+        }
+
+        .panel p {
+            margin: 10px 0;
+        }
+
+        .button, form {
+            background-color: #00FF00;
+            border: none;
+            color: black;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #009900;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Hacker Admin Dashboard</div>
+        <div class="panel">
+            <h2>System Status</h2>
+            <p>All systems operational.</p>
+            <p>No intrusions detected.</p>
+        </div>
+        <div class="panel">
+            <h2>User Management</h2>
+            <p>Active Users: 42</p>
+            <form action="/logout" method="POST">
+                <button type="submit">Logout</button>
+              </form>
+            <button class="button"><a href="/welcome">welcome</a></button>
+        </div>
+        <div class="panel">
+            <h2>Server Logs</h2>
+            <p>Logs updated at 00:00:00.</p>
+            <button class="button">View Logs</button>
+        </div>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
