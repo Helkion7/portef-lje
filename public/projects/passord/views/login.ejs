@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title %></title>
+    <link rel="icon" href="/icons/computer.png" type="image/png" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <a id="home-button" href="http://127.0.0.1:5500/public/">Home</a>
+    <div class="container">
+      <h1 class="header">Login</h1>
+      <% if (typeof error !== 'undefined') { %>
+      <p class="error"><%= error %></p>
+      <% } %>
+      <form
+        id="loginForm"
+        action="/"
+        method="POST"
+        onsubmit="updateButtonText()"
+      >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <div id="loginButtonContainer">
+          <button type="submit" id="loginButton">Login</button>
+        </div>
+      </form>
+
+      <a href="/register">Register?</a>
+    </div>
+
+    <script>
+      function updateButtonText() {
+        const loginButton = document.getElementById("loginButton");
+        loginButton.innerText = "Logging in...";
+      }
+    </script>
+  </body>
+</html>

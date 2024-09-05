@@ -349,7 +349,7 @@ li {
   }
 
   .menu-icon {
-    display: block; /* Show the hamburger icon */
+    display: flex; /* Show the hamburger icon */
   }
 
   nav ul.expanded {
@@ -371,7 +371,6 @@ li {
 
   #hero {
     padding: 20px;
-    height: auto;
   }
 
   #hero h2 {
