@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "roboto", sans-serif;
   line-height: 1.6;
   color: #333;
   background: #f9f9f9;
@@ -15,6 +20,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
   padding: 20px;
   background: #333;
   color: #fff;
@@ -22,6 +29,11 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  transition: top 0.3s ease-in-out;
+}
+
+.header-hidden {
+  top: -100px; /* Adjust this based on your navbar height */
 }
 
 nav ul {
@@ -271,6 +283,7 @@ hr {
 .projectCard:hover {
   transform: scale(1.05);
   box-shadow: 3px 3px 25px 3px #00aaff80;
+  z-index: 6;
 }
 
 .extraContent {
