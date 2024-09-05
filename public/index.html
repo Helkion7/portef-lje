@@ -8,24 +8,30 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="./index.html">
-          <img
-            style="width: 5rem"
-            src="./img/weather-icon-isolated/10200707.png"
-            alt=""
-          />
-        </a>
+      <div class="navigationalBar">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              style="width: 5rem"
+              src="./img/weather-icon-isolated/10200707.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="burgerContainer">
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
       </div>
       <nav>
-        <div class="menu-icon" onclick="toggleMenu()">
-          &#9776;
-          <!-- This is the hamburger icon -->
-        </div>
-        <ul id="nav-links" class="collapsed">
+        <ul id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="./img/CV.pdf" target="_blank">CV</a></li>
         </ul>
       </nav>

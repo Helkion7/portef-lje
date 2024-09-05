@@ -385,32 +385,93 @@ li {
   }
 }
 
-.menu-icon {
-  display: none;
-  font-size: 2rem;
+.burgerContainer {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigationalBar {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* From Uiverse.io by Cevorob */
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
   cursor: pointer;
+  display: none;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #b6f6ec;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
 }
 
 /* Mobile support */
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  nav ul {
-    display: none; /* Hide the menu by default */
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .menu-icon {
-    display: flex; /* Show the hamburger icon */
-  }
-
-  nav ul.expanded {
-    display: flex; /* Show the menu when expanded */
+  .burger {
+    display: flex;
   }
 
   /* Align the navbar links to start from the left */
@@ -424,6 +485,10 @@ li {
     padding: 10px;
     width: 100%;
     display: block;
+  }
+
+  #nav-links {
+    display: none;
   }
 
   #hero {
