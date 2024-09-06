@@ -6,6 +6,7 @@
   --font-size-base: 1.2rem;
   --font-size-smaller: 1.1rem;
   --color-primary: #00aaff;
+  --color-gradiant: #00ffaa;
   --color-secondary: #333;
   --color-background: #f9f9f9;
   --color-header-background: #333;
@@ -93,7 +94,7 @@ nav ul li a:hover {
   background: linear-gradient(
     to right,
     var(--color-primary),
-    var(--color-primary)
+    var(--color-gradiant)
   );
   color: #fff;
   text-align: center;
