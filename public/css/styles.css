@@ -99,6 +99,14 @@ nav ul li a:hover {
   color: #fff;
   text-align: center;
   animation: fadeIn 2s ease-in-out;
+  height: 100vh;
+  padding-bottom: env(safe-area-inset-bottom); /* For handling safe area */
+}
+
+@supports (height: 100dvh) {
+  #hero {
+    height: 100dvh; /* Uses dynamic viewport height to adjust on scroll */
+  }
 }
 
 #hero h2 {
@@ -183,7 +191,6 @@ hr {
 
 #aboutMePhoto {
   width: 100%;
-  max-width: 300px;
   border-radius: 20px;
   box-shadow: var(--box-shadow-light);
   transition: transform var(--transition-speed) ease,
