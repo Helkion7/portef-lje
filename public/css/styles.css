@@ -1,35 +1,35 @@
 :root {
-  --font-family: "roboto", sans-serif;
-  --font-size-large: 2.5rem;
-  --font-size-medium: 2rem;
-  --font-size-small: 1.5rem;
-  --font-size-base: 1.2rem;
-  --font-size-smaller: 1.1rem;
-  --color-primary: #00aaff;
-  --color-gradiant: #00ffaa;
-  --color-secondary: #333;
-  --color-background: #f9f9f9;
-  --color-header-background: #333;
-  --color-header-text: #fff;
-  --color-btn-background: #333;
-  --color-btn-hover: #555;
-  --color-glow: #00aaff80;
-  --color-glow-hover: #00aaff;
-  --color-text-hover: #00aaff;
-  --color-section-background: #f9f9f9;
-  --color-skill-hover-background: #00aaff;
-  --color-skill-hover-text: #fff;
-  --box-shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --box-shadow-glow: 0 0 15px #00aaff80, 0 0 20px rgba(0, 170, 255, 0.5);
-  --box-shadow-glow-hover: 0 0 20px rgba(0, 170, 255, 0.7),
+  --fontFamily: "roboto", sans-serif;
+  --fontSizeLarge: 2.5rem;
+  --fontSizeMedium: 2rem;
+  --fontSizeSmall: 1.5rem;
+  --fontSizeBase: 1.2rem;
+  --fontSizeSmaller: 1.1rem;
+  --colorPrimary: #00aaff;
+  --colorGradiant: #00ffaa;
+  --colorSecondary: #333;
+  --colorBackground: #f9f9f9;
+  --colorHeaderBackground: #333;
+  --colorHeaderText: #fff;
+  --colorBtnBackground: #333;
+  --colorBtnHover: #555;
+  --colorGlow: #00aaff80;
+  --colorGlowHover: #00aaff;
+  --colorTextHover: #00aaff;
+  --colorSectionBackground: #f9f9f9;
+  --colorSkillHoverBackground: #00aaff;
+  --colorSkillHoverText: #fff;
+  --boxShadowLight: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --boxShadowGlow: 0 0 15px #00aaff80, 0 0 20px rgba(0, 170, 255, 0.5);
+  --boxShadowGlowHover: 0 0 20px rgba(0, 170, 255, 0.7),
     0 0 25px rgba(0, 170, 255, 0.7);
-  --box-shadow-card: 0 2px 10px rgba(0, 0, 0, 0.1);
-  --box-shadow-card-hover: 3px 3px 25px 3px #00aaff80;
-  --transition-speed: 0.3s;
+  --boxShadowCard: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --boxShadowCardHover: 3px 3px 25px 3px #00aaff80;
+  --transitionSpeed: 0.3s;
 }
 
 @font-face {
-  font-family: var(--font-family);
+  font-family: var(--fontFamily);
   src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
@@ -40,10 +40,10 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--fontFamily);
   line-height: 1.6;
-  color: var(--color-secondary);
-  background: var(--color-background);
+  color: var(--colorSecondary);
+  background: var(--colorBackground);
 }
 
 header {
@@ -53,8 +53,8 @@ header {
   position: sticky;
   width: 100%;
   padding: 20px;
-  background: var(--color-header-background);
-  color: var(--color-header-text);
+  background: var(--colorHeaderBackground);
+  color: var(--colorHeaderText);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   top: 0;
   z-index: 1000;
@@ -62,7 +62,7 @@ header {
 }
 
 .header-hidden {
-  top: -100px; /* Adjust this based on your navbar height */
+  top: -100px;
 }
 
 nav ul {
@@ -75,14 +75,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--color-header-text);
+  color: var(--colorHeaderText);
   text-decoration: none;
   font-weight: bold;
-  transition: color var(--transition-speed) ease;
+  transition: color var(--transitionSpeed) ease;
 }
 
 nav ul li a:hover {
-  color: var(--color-text-hover);
+  color: var(--colorTextHover);
 }
 
 #hero {
@@ -93,8 +93,8 @@ nav ul li a:hover {
   height: 100vh;
   background: linear-gradient(
     to right,
-    var(--color-primary),
-    var(--color-gradiant)
+    var(--colorPrimary),
+    var(--colorGradiant)
   );
   color: #fff;
   text-align: center;
@@ -110,44 +110,44 @@ nav ul li a:hover {
 }
 
 #hero h2 {
-  font-size: var(--font-size-large);
+  font-size: var(--fontSizeLarge);
   margin-bottom: 10px;
   animation: slideIn 1s ease-out;
 }
 
 #hero h3 {
-  font-size: var(--font-size-medium);
+  font-size: var(--fontSizeMedium);
   margin-bottom: 20px;
   animation: slideIn 1s ease-out;
 }
 
 #hero p {
-  font-size: var(--font-size-base);
+  font-size: var(--fontSizeBase);
   animation: slideIn 1.5s ease-out;
 }
 
 .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: var(--color-btn-background);
+  background: var(--colorBtnBackground);
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
-  transition: background var(--transition-speed) ease,
-    transform var(--transition-speed) ease;
+  transition: background var(--transitionSpeed) ease,
+    transform var(--transitionSpeed) ease;
 }
 
 .btn:hover {
-  background: var(--color-btn-hover);
+  background: var(--colorBtnHover);
   transform: translateY(-5px);
 }
 
 .glowBtn {
-  box-shadow: var(--box-shadow-glow);
+  box-shadow: var(--boxShadowGlow);
 }
 
 .glowBtn:hover {
-  box-shadow: var(--box-shadow-glow-hover);
+  box-shadow: var(--boxShadowGlowHover);
 }
 
 hr {
@@ -166,8 +166,8 @@ hr {
 
 #about {
   padding: 40px 20px;
-  background-color: var(--color-section-background);
-  color: var(--color-secondary);
+  background-color: var(--colorSectionBackground);
+  color: var(--colorSecondary);
   text-align: center;
   transform: translateY(50px); /* Slightly shifted down */
   transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
@@ -185,34 +185,34 @@ hr {
 .div1 {
   display: flex;
   justify-content: center;
-  transition: transform var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease;
+  transition: transform var(--transitionSpeed) ease,
+    box-shadow var(--transitionSpeed) ease;
 }
 
 #aboutMePhoto {
   width: 100%;
   border-radius: 20px;
-  box-shadow: var(--box-shadow-light);
-  transition: transform var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease;
+  box-shadow: var(--boxShadowLight);
+  transition: transform var(--transitionSpeed) ease,
+    box-shadow var(--transitionSpeed) ease;
 }
 
 .div2 p {
-  font-size: var(--font-size-smaller);
+  font-size: var(--fontSizeSmaller);
   line-height: 1.6;
   margin: 0;
   padding: 0 20px;
-  transition: color var(--transition-speed) ease,
-    transform var(--transition-speed) ease;
+  transition: color var(--transitionSpeed) ease,
+    transform var(--transitionSpeed) ease;
 }
 
 .div1:hover #aboutMePhoto {
   transform: scale(1.05); /* Slight zoom effect */
-  box-shadow: 3px 3px 25px 3px var(--color-primary);
+  box-shadow: 3px 3px 25px 3px var(--colorPrimary);
 }
 
 .div2 p:hover {
-  color: var(--color-text-hover); /* Change text color on hover */
+  color: var(--colorTextHover); /* Change text color on hover */
   transform: translateX(10px); /* Slide text slightly to the right */
 }
 
@@ -241,7 +241,7 @@ hr {
 }
 
 #skills {
-  color: var(--color-secondary);
+  color: var(--colorSecondary);
   padding: 40px 20px;
   text-align: center;
 }
@@ -255,18 +255,18 @@ hr {
 }
 
 .skillsCategory {
-  background: var(--color-section-background);
+  background: var(--colorSectionBackground);
   padding: 20px;
   border-radius: 10px;
-  box-shadow: var(--box-shadow-light);
-  transition: background var(--transition-speed) ease,
-    transform var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease;
+  box-shadow: var(--boxShadowLight);
+  transition: background var(--transitionSpeed) ease,
+    transform var(--transitionSpeed) ease,
+    box-shadow var(--transitionSpeed) ease;
 }
 
 .skillsCategory h3 {
   margin-bottom: 10px;
-  font-size: var(--font-size-medium);
+  font-size: var(--fontSizeMedium);
 }
 
 .skillsCategory ul {
@@ -276,20 +276,20 @@ hr {
 
 .skillsCategory ul li {
   margin-bottom: 8px;
-  font-size: var(--font-size-smaller);
-  transition: color var(--transition-speed) ease,
-    transform var(--transition-speed) ease;
+  font-size: var(--fontSizeSmaller);
+  transition: color var(--transitionSpeed) ease,
+    transform var(--transitionSpeed) ease;
 }
 
 .skillsCategory:hover {
-  background: var(--color-skill-hover-background);
-  color: var(--color-skill-hover-text);
+  background: var(--colorSkillHoverBackground);
+  color: var(--colorSkillHoverText);
   transform: scale(1.05);
   box-shadow: 3px 3px 25px 3px rgba(0, 170, 255, 0.5);
 }
 
 .skillsCategory:hover ul li {
-  color: var(--color-skill-hover-text);
+  color: var(--colorSkillHoverText);
   transform: translateX(10px);
 }
 
@@ -309,18 +309,18 @@ hr {
   background: #fff; /* Default background */
   padding: 20px;
   border-radius: 10px;
-  box-shadow: var(--box-shadow-card);
+  box-shadow: var(--boxShadowCard);
   position: relative;
   overflow: hidden;
   min-height: 150px;
-  transition: transform var(--transition-speed) ease,
-    box-shadow var(--transition-speed) ease,
-    background var(--transition-speed) ease;
+  transition: transform var(--transitionSpeed) ease,
+    box-shadow var(--transitionSpeed) ease,
+    background var(--transitionSpeed) ease;
 }
 
 .projectCard:hover {
   transform: scale(1.05);
-  box-shadow: var(--box-shadow-card-hover);
+  box-shadow: var(--boxShadowCardHover);
   z-index: 6;
 }
 
@@ -342,7 +342,7 @@ hr {
 button {
   display: inline-block;
   border-radius: 4px;
-  background-color: var(--color-primary);
+  background-color: var(--colorPrimary);
   border: none;
   color: #000000;
   text-align: center;
@@ -383,7 +383,7 @@ button:hover span:after {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: var(--color-header-background);
+  background-color: var(--colorHeaderBackground);
   color: white;
 }
 
@@ -412,7 +412,7 @@ li {
 }
 
 .link {
-  color: var(--color-header-text);
+  color: var(--colorHeaderText);
 }
 
 @keyframes fadeIn {
@@ -542,11 +542,11 @@ li {
   }
 
   #hero h2 {
-    font-size: var(--font-size-medium);
+    font-size: var(--fontSizeMedium);
   }
 
   #hero h3 {
-    font-size: var(--font-size-small);
+    font-size: var(--fontSizeSmall);
   }
 
   .aboutMe {

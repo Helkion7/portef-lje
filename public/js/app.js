@@ -3,7 +3,7 @@ const navLinks = document.getElementById("nav-links");
 const navItems = navLinks.getElementsByTagName("li");
 
 const adjustNavDisplay = () => {
-  if (window.innerWidth < 768) {
+  if (window.innerWidth < 769) {
     if (burger.checked) {
       navLinks.style.display = "flex";
       navLinks.style.flexDirection = "column";
